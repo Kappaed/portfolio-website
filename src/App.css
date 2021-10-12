@@ -1,38 +1,57 @@
-.App {
-  text-align: center;
+/* Global css styles here - otherwise do not TOUCH!!! */
+
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400&family=Fira+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400&family=Fira+Mono&family=Roboto+Mono:wght@300&display=swap");
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root {
+  --primary-font-color: black;
+  --secondary-font-color: palevioletred;
+  --tertiary-font-color: white;
+  --primary-bg-color: papayawhip;
+  --font-primary: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-secondary: "Fira Code", "Fira Mono", "Roboto Mono", monospace;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+img {
+  display: block;
+  width: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+button {
+  cursor: pointer;
+  display: inline-block;
 }
 
-.App-link {
-  color: #61dafb;
+h1,
+h2,
+h3,
+h4 {
+  color: var(--tertiary-font-color);
+  font-weight: bold;
+  margin: 20px 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+body {
+  line-height: 1.6;
+  background: var(--primary-bg-color);
+  color: var(--primary-font-color);
+  font-family: var(--font-primary);
+  font-size: 10px;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
 }
