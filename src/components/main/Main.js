@@ -10,7 +10,7 @@ const Wrapper = styled.div`
   line-height: 2;
   font-size: 1.2rem;
   margin: 15px 0;
-  height: calc(100vh - 175px);
+  height: calc(100vh);
 `;
 
 const StyledText = styled.p`
@@ -24,10 +24,10 @@ const Main = () => {
     <Wrapper>
       <Container>
         <SecondaryText>Hi, my name is</SecondaryText>
-        <StyledHeading as="h1" size="3rem">
+        <StyledHeading as="h1" size="4rem">
           Nathan Sing.
         </StyledHeading>
-        <StyledHeading as="h1" size="3rem" color="var(--tertiary-font-color)">
+        <StyledHeading as="h1" size="4rem" color="var(--tertiary-font-color)">
           Front-end is my passion.
         </StyledHeading>
         <StyledText>

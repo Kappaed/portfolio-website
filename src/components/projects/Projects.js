@@ -11,7 +11,7 @@ const ProjectsContainer = styled(Container)`
 
 const Projects = () => {
   return (
-    <ProjectsContainer>
+    <ProjectsContainer id="projects">
       <SectionHeader index="2" width="80%">
         Some things I've built
       </SectionHeader>

@@ -21,7 +21,7 @@ const SkillsHeader = styled(StyledHeading)`
 
 const About = () => {
   return (
-    <Container>
+    <Container id="about">
       <FlexWrapper>
         <SectionHeader index="1">About me</SectionHeader>
         <SkillsHeader>Skills</SkillsHeader>

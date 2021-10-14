@@ -6,7 +6,7 @@ const Wrapper = styled.li`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 1.3rem;
+  font-size: 0.9rem;
   ul:last-child {
     margin-right: 0;
   }
@@ -15,13 +15,13 @@ const Nav = () => {
   return (
     <nav>
       <Wrapper>
-        <NavItem href="#" index="1">
+        <NavItem href="#about" index="1">
           About
         </NavItem>
-        <NavItem href="#" index="2">
+        <NavItem href="#projects" index="2">
           Projects
         </NavItem>
-        <NavItem href="#" index="3">
+        <NavItem href="#contact" index="3">
           Contact
         </NavItem>
         <StyledButton as="a" href="#">

@@ -1,10 +1,12 @@
 import headerLogo from "../../images/header-logo.png";
 import styled from "styled-components";
 import Container from "../shared/Container";
+import Headroom from "react-headroom";
 import Nav from "./Nav";
+import { useState } from "react";
 
 const HeaderContainer = styled(Container)`
-  padding: 20px 0;
+  padding: 10px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -12,7 +14,7 @@ const HeaderContainer = styled(Container)`
 `;
 
 const StyledLogo = styled.img`
-  width: 100px;
+  width: 65px;
   cursor: pointer;
   &:hover {
     opacity: 0.8;
@@ -20,12 +22,24 @@ const StyledLogo = styled.img`
 `;
 
 const Header = () => {
+  const [fixed, setFixed] = useState(false);
   return (
     <header>
-      <HeaderContainer>
-        <StyledLogo src={headerLogo} alt="website logo" />
-        <Nav />
-      </HeaderContainer>
+      <Headroom
+        style={{
+          zIndex: "10",
+          background: fixed
+            ? "var(--darker-primary)"
+            : "var(--primary-bg-color)",
+        }}
+        onUnpin={() => setFixed(true)}
+        onUnfix={() => setFixed(false)}
+      >
+        <HeaderContainer>
+          <StyledLogo src={headerLogo} alt="website logo" />
+          <Nav />
+        </HeaderContainer>
+      </Headroom>
     </header>
   );
 };

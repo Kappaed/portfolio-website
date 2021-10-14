@@ -19,7 +19,11 @@ const AboutIntroText = () => {
         ensuring great digital experiences.
       </AboutText>
       <AboutText>
-        You check out my <StyledLink href="#"> projects here. </StyledLink>
+        You can check out my
+        <StyledLink href="https://github.com/kappaed">
+          {" "}
+          Github here.
+        </StyledLink>{" "}
       </AboutText>
     </>
   );
