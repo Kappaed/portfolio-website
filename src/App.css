@@ -16,10 +16,12 @@
   --primary-font-color: #00102a;
   --secondary-font-color: palevioletred;
   --tertiary-font-color: rgb(87, 78, 78);
+  --darker-primary: #ffe5bb;
   --primary-bg-color: papayawhip;
   --font-primary: "Helvetica Neue", Helvetica, Arial, sans-serif;
   --font-secondary: "Fira Code", "Fira Mono", "Roboto Mono", monospace;
   --bg-tint: rgba(219, 112, 147, 0.2);
+  --small-text-size: 0.9rem;
 }
 
 img {
