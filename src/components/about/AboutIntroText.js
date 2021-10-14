@@ -1,6 +1,3 @@
-import StyledHeading from "../shared/StyledHeading";
-import SecondaryText from "../shared/SecondaryText";
-import SectionHeader from "../shared/SectionHeader";
 import StyledLink from "../shared/StyledLink";
 import styled from "styled-components";
 
@@ -12,11 +9,6 @@ const AboutText = styled.p`
 const AboutIntroText = () => {
   return (
     <>
-      <SectionHeader>
-        <SecondaryText>01. </SecondaryText>
-        <div style={{ marginRight: "10px" }} />
-        <StyledHeading size="1.8rem">About Me</StyledHeading>
-      </SectionHeader>
       <AboutText>
         Hello! My name is Nathan and I enjoy creating rich, interactive
         web-interfaces. My interest is in HTML, CSS and Javascript Frameworks

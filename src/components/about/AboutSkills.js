@@ -10,13 +10,9 @@ const Wrapper = styled.div`
   justify-content: center;
 `;
 
-const ActionHeading = styled(StyledHeading)`
-  text-align: center;
-`;
 const AboutSkills = (props) => {
   return (
     <>
-      <ActionHeading>Skills</ActionHeading>
       <Wrapper>
         <div>
           {props.skills.map((skill) => (

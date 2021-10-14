@@ -1,25 +1,30 @@
 import styled from "styled-components";
+import SecondaryText from "./SecondaryText";
+import StyledHeading from "./StyledHeading";
+
 const Divider = styled.div`
-  /* width: 60%; */
+  width: 50%;
   height: 1px;
   display: block;
-  width: 250px;
   max-width: 100%;
-  margin: 0 auto;
+  margin-right: auto;
   /* margin-left: 20px; */
   background: var(--tertiary-font-color);
 `;
 
 const Wrapper = styled.div`
+  width: ${(props) => (props.width ? props.width : "50%")};
   display: flex;
   align-items: center;
-  width: 100%;
   font-size: 1.7rem;
 `;
 const SectionHeader = (props) => {
   return (
-    <Wrapper>
-      {props.children}
+    <Wrapper width={props.width}>
+      <SecondaryText> {`0${props.index}.`} </SecondaryText>
+      <div style={{ marginRight: "10px" }} />
+      <StyledHeading size="1.8rem">{props.children}</StyledHeading>
+      <div style={{ marginRight: "10px" }} />
       <Divider />
     </Wrapper>
   );
