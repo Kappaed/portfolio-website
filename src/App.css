@@ -13,12 +13,13 @@
 }
 
 :root {
-  --primary-font-color: black;
+  --primary-font-color: #00102a;
   --secondary-font-color: palevioletred;
-  --tertiary-font-color: white;
+  --tertiary-font-color: rgb(87, 78, 78);
   --primary-bg-color: papayawhip;
   --font-primary: "Helvetica Neue", Helvetica, Arial, sans-serif;
   --font-secondary: "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+  --bg-tint: rgba(219, 112, 147, 0.2);
 }
 
 img {
@@ -36,14 +37,22 @@ h2,
 h3,
 h4 {
   color: var(--tertiary-font-color);
-  font-weight: bold;
-  margin: 20px 0;
+  /* font-weight: bold; */
+  font-weight: normal;
+  font-size: 3rem;
+  /* margin: 20px 0; */
+}
+
+p {
+  font-size: 1.2rem;
+  margin: 10px 0;
 }
 
 body {
-  line-height: 1.6;
+  line-height: 1.2;
   background: var(--primary-bg-color);
   color: var(--primary-font-color);
+  font-weight: normal;
   font-family: var(--font-primary);
   font-size: 10px;
 }
