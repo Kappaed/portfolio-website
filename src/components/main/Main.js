@@ -3,13 +3,14 @@ import Container from "../shared/Container";
 import SecondaryText from "../shared/SecondaryText";
 import StyledHeading from "../shared/StyledHeading";
 import StyledButton from "../shared/StyledButton";
+import StyledLink from "../shared/StyledLink";
 
 const Wrapper = styled.div`
   width: 100%;
   color: var(--primary-font-color);
   line-height: 2;
   font-size: 1.2rem;
-  margin: 15px 0;
+  margin-top: 70px;
   height: calc(100vh);
 `;
 
@@ -37,7 +38,9 @@ const Main = () => {
             You can check out my projects below!
           </SecondaryText>
         </StyledText>
-        <StyledButton>Check out my projects</StyledButton>
+        <StyledButton as="a" href="#projects">
+          Check out my projects
+        </StyledButton>
       </Container>
     </Wrapper>
   );

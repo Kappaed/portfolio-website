@@ -22,18 +22,18 @@ const StyledLogo = styled.img`
 `;
 
 const Header = () => {
-  const [fixed, setFixed] = useState(false);
+  const [isPosFixed, setIsPosFixed] = useState(false);
   return (
     <header>
       <Headroom
         style={{
           zIndex: "10",
-          background: fixed
+          background: isPosFixed
             ? "var(--darker-primary)"
             : "var(--primary-bg-color)",
         }}
-        onUnpin={() => setFixed(true)}
-        onUnfix={() => setFixed(false)}
+        onUnpin={() => setIsPosFixed(true)}
+        onUnfix={() => setIsPosFixed(false)}
       >
         <HeaderContainer>
           <StyledLogo src={headerLogo} alt="website logo" />
