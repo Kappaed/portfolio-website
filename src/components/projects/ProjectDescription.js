@@ -11,6 +11,11 @@ const ProjectDescription = styled.div`
   line-height: 1.5;
   border-radius: 4px;
   margin-top: 15px;
+  @media (max-width: 700px) {
+    left: auto;
+    right: auto;
+    width: 100%;
+  }
 `;
 
 export default ProjectDescription;

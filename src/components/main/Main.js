@@ -18,6 +18,28 @@ const StyledText = styled.p`
   width: 50%;
   line-height: 1.3;
   margin-bottom: 40px;
+  @media (max-width: 800px) {
+    width: 70%;
+  }
+  @media (max-width: 550px) {
+    width: 90%;
+  }
+  @media (max-width: 350px) {
+    width: 100%;
+  }
+`;
+
+const MainHeading = styled(StyledHeading)`
+  @media (max-width: 800px) {
+    font-size: 3.4rem;
+    line-height: 1.2;
+  }
+  @media (max-width: 550px) {
+    font-size: 3rem;
+  }
+  @media (max-width: 350px) {
+    font-size: 2.5rem;
+  }
 `;
 
 const Main = () => {
@@ -25,12 +47,12 @@ const Main = () => {
     <Wrapper>
       <Container>
         <SecondaryText>Hi, my name is</SecondaryText>
-        <StyledHeading as="h1" size="4rem">
+        <MainHeading as="h1" size="4rem">
           Nathan Sing.
-        </StyledHeading>
-        <StyledHeading as="h1" size="4rem" color="var(--tertiary-font-color)">
+        </MainHeading>
+        <MainHeading as="h1" size="4rem" color="var(--tertiary-font-color)">
           Front-end is my passion.
-        </StyledHeading>
+        </MainHeading>
         <StyledText>
           I'm a Front End Developer specialised in React who's interested in the
           latest web technologies.{" "}

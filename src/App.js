@@ -6,11 +6,26 @@ import Projects from "./components/projects/Projects";
 import Action from "./components/action/Action";
 import EmailElement from "./components/side-elements/EmailElement";
 import IconsElement from "./components/side-elements/IconsElement";
+import HamburgerMenu from "./components/header/HamburgerMenu";
+import { useState } from "react";
 
 function App() {
+  const [hamburgerActive, setHamburgerActive] = useState(false);
+  const closeButtonHandler = () => {
+    setHamburgerActive(false);
+  };
+
+  const openButtonHandler = () => {
+    setHamburgerActive(true);
+  };
+
   return (
     <>
-      <Header />
+      <HamburgerMenu
+        active={hamburgerActive}
+        closeButtonHandler={closeButtonHandler}
+      />
+      <Header openMenuHandler={openButtonHandler} />
       <Main />
       <About />
       <Projects />

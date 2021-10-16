@@ -6,9 +6,14 @@ const AboutText = styled.p`
   margin-bottom: 20px;
 `;
 
+const Wrapper = styled.div`
+  @media (max-width: 750px) {
+    margin: 20px 0 60px 0;
+  }
+`;
 const AboutIntroText = () => {
   return (
-    <>
+    <Wrapper>
       <AboutText>
         Hello! My name is Nathan and I enjoy creating rich, interactive
         web-interfaces. My interest is in HTML, CSS and Javascript Frameworks
@@ -25,7 +30,7 @@ const AboutIntroText = () => {
           Github here.
         </StyledLink>{" "}
       </AboutText>
-    </>
+    </Wrapper>
   );
 };
 

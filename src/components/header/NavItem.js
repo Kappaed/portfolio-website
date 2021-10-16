@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import SecondaryText from "../shared/SecondaryText";
 
 const NavText = styled(SecondaryText)`
@@ -7,8 +7,14 @@ const NavText = styled(SecondaryText)`
   }
 `;
 
+const MobileWrapper = css`
+  margin: 40px 0;
+  font-size: 2rem;
+`;
+
 const Wrapper = styled.ul`
   margin-right: 40px;
+  ${(props) => props.mobile && MobileWrapper};
 `;
 
 const ChildWrapper = styled.span`
@@ -19,7 +25,7 @@ const ChildWrapper = styled.span`
 
 const NavItem = (props) => {
   return (
-    <Wrapper>
+    <Wrapper mobile={props.mobile}>
       <NavText as="a" href={props.href}>
         {`0${props.index}.`}
         <ChildWrapper>{props.children}</ChildWrapper>

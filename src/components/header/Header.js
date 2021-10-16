@@ -4,13 +4,16 @@ import Container from "../shared/Container";
 import Headroom from "react-headroom";
 import Nav from "./Nav";
 import { useState } from "react";
+import StyledButton from "../shared/StyledButton";
+import { FaBars } from "react-icons/fa";
 
 const HeaderContainer = styled(Container)`
-  padding: 10px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
   max-width: 1200px;
+  padding: 10px 15px;
+  position: relative;
 `;
 
 const StyledLogo = styled.img`
@@ -21,7 +24,15 @@ const StyledLogo = styled.img`
   }
 `;
 
-const Header = () => {
+const HamburgerButton = styled(StyledButton)`
+  display: none;
+  font-size: 1.8rem;
+  @media (max-width: 750px) {
+    display: flex;
+  }
+`;
+
+const Header = (props) => {
   const [isPosFixed, setIsPosFixed] = useState(false);
   return (
     <header>
@@ -38,6 +49,9 @@ const Header = () => {
         <HeaderContainer>
           <StyledLogo src={headerLogo} alt="website logo" />
           <Nav />
+          <HamburgerButton onClick={props.openMenuHandler}>
+            <FaBars />
+          </HamburgerButton>
         </HeaderContainer>
       </Headroom>
     </header>

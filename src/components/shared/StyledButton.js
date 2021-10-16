@@ -13,6 +13,8 @@ const StyledButton = styled.button`
   &:hover {
     background: var(--bg-tint);
   }
+  ${(props) => props.hamburger && "font-size: 2rem"};
+  ${(props) => props.hamburger && "margin-top: 30px"};
 `;
 
 export default StyledButton;

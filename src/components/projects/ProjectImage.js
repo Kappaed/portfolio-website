@@ -17,6 +17,9 @@ const ImgWrapper = styled.div`
   &:hover:after {
     opacity: 0;
   }
+  @media (max-width: 700px) {
+    width: 100%;
+  }
 `;
 const StyledImage = styled.img`
   border-radius: 5px;

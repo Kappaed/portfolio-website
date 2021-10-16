@@ -11,6 +11,9 @@ const SideWrapper = styled.div`
   right: ${(props) => (props.right ? "30px" : "auto")};
   left: ${(props) => (props.left ? "30px" : "auto")};
   font-size: 1rem;
+  @media (max-width: 1100px) {
+    display: none;
+  }
 `;
 
 export default SideWrapper;

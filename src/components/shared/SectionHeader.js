@@ -17,13 +17,21 @@ const Wrapper = styled.div`
   display: flex;
   align-items: center;
   font-size: 1.7rem;
+  @media (max-width: 650px) {
+    width: 95%;
+  }
 `;
+
+const SectionHeading = styled(StyledHeading)`
+  white-space: nowrap;
+`;
+
 const SectionHeader = (props) => {
   return (
     <Wrapper width={props.width}>
       <SecondaryText> {`0${props.index}.`} </SecondaryText>
       <div style={{ marginRight: "10px" }} />
-      <StyledHeading size="1.8rem">{props.children}</StyledHeading>
+      <SectionHeading size="1.8rem">{props.children}</SectionHeading>
       <div style={{ marginRight: "10px" }} />
       <Divider />
     </Wrapper>

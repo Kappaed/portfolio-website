@@ -11,6 +11,9 @@ const Wrapper = styled.div`
   margin-bottom: 80px;
   flex-direction: ${(props) => (props.reverse ? "row-reverse" : "row")};
   position: relative;
+  @media (max-width: 700px) {
+    flex-direction: column;
+  }
 `;
 const ProjectTemplate = (props) => {
   return (

@@ -8,29 +8,38 @@ import SectionHeader from "../shared/SectionHeader";
 const FlexWrapper = styled.div`
   display: flex;
   align-items: stretch;
+  @media (max-width: 750px) {
+    flex-direction: column;
+  }
 `;
 
 const AboutColumn = styled.div`
   width: 50%;
+  @media (max-width: 750px) {
+    width: 100%;
+  }
 `;
 
 const SkillsHeader = styled(StyledHeading)`
-  width: 50%;
+  width: 100%;
   text-align: center;
+  @media (max-width: 750px) {
+    margin-bottom: 30px;
+  }
 `;
 
 const About = () => {
   return (
     <Container id="about">
       <FlexWrapper>
-        <SectionHeader index="1">About me</SectionHeader>
-        <SkillsHeader>Skills</SkillsHeader>
-      </FlexWrapper>
-      <FlexWrapper>
         <AboutColumn>
+          <SectionHeader index="1" width="100%">
+            About me
+          </SectionHeader>
           <AboutIntroText />
         </AboutColumn>
         <AboutColumn marginLeft>
+          <SkillsHeader>Skills</SkillsHeader>
           <AboutSkills
             skills={[
               "HTML",
