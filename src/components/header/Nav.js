@@ -1,7 +1,6 @@
 import styled, { css } from "styled-components";
 import NavItem from "./NavItem";
 import StyledButton from "../shared/StyledButton";
-import { FaBars } from "react-icons/fa";
 
 const Wrapper = styled.li`
   display: flex;

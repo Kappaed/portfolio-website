@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import AboutSkill from "./AboutSkill";
-import StyledHeading from "../shared/StyledHeading";
 
 const Wrapper = styled.div`
   width: 100%;
@@ -15,8 +14,8 @@ const AboutSkills = (props) => {
     <>
       <Wrapper>
         <div>
-          {props.skills.map((skill) => (
-            <AboutSkill>{skill}</AboutSkill>
+          {props.skills.map((skill, i) => (
+            <AboutSkill key={i}>{skill}</AboutSkill>
           ))}
         </div>
       </Wrapper>

@@ -2,9 +2,9 @@ import ReactDOM from "react-dom";
 import styled from "styled-components";
 import Nav from "./Nav";
 import { useEffect } from "react";
-import ProjectDescription from "../projects/ProjectDescription";
 import StyledButton from "../shared/StyledButton";
 import { FaTimes } from "react-icons/fa";
+import HeaderLogo from "../../images/header-logo.png";
 const Wrapper = styled.div`
   z-index: 10;
   position: fixed;
@@ -51,8 +51,15 @@ const HamburgerButton = styled(StyledButton)`
   display: flex;
   font-size: 1.8rem;
 `;
+
+const LogoWrapper = styled.div`
+  position: absolute;
+  top: 0.65rem;
+  left: 0.95rem;
+  z-index: 10;
+  width: 65px;
+`;
 const HamburgerMenu = (props) => {
-  console.log(props.active);
   useEffect(() => {
     if (props.active) {
       document.body.style.overflow = "hidden";
@@ -62,6 +69,9 @@ const HamburgerMenu = (props) => {
   }, [props.active]);
   return ReactDOM.createPortal(
     <Wrapper visible={props.active}>
+      <LogoWrapper>
+        <img src={HeaderLogo} alt="Website Header" />
+      </LogoWrapper>
       <HamburgerButton onClick={props.closeButtonHandler}>
         <FaTimes />
       </HamburgerButton>

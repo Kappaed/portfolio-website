@@ -12,6 +12,9 @@ const Wrapper = styled(Container)`
   padding: 0 130px;
   text-align: center;
   margin: 300px auto;
+  @media (max-width: 500px) {
+    padding: 0 50px;
+  }
 `;
 
 const StyledText = styled.p`

@@ -8,6 +8,7 @@ const Divider = styled.div`
   display: block;
   max-width: 100%;
   margin-right: auto;
+  overflow: hidden;
   /* margin-left: 20px; */
   background: var(--tertiary-font-color);
 `;
@@ -24,6 +25,9 @@ const Wrapper = styled.div`
 
 const SectionHeading = styled(StyledHeading)`
   white-space: nowrap;
+  @media (max-width: 460px) {
+    font-size: 1.3rem;
+  }
 `;
 
 const SectionHeader = (props) => {

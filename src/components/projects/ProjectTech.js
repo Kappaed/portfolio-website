@@ -15,8 +15,8 @@ const Wrapper = styled.div`
 const ProjectTech = (props) => {
   return (
     <Wrapper>
-      {props.tech.map((item) => (
-        <Item>{item}</Item>
+      {props.tech.map((item, i) => (
+        <Item key={i}>{item}</Item>
       ))}
     </Wrapper>
   );

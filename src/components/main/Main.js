@@ -3,7 +3,6 @@ import Container from "../shared/Container";
 import SecondaryText from "../shared/SecondaryText";
 import StyledHeading from "../shared/StyledHeading";
 import StyledButton from "../shared/StyledButton";
-import StyledLink from "../shared/StyledLink";
 
 const Wrapper = styled.div`
   width: 100%;
