@@ -4,7 +4,7 @@ import ProjectDescription from "./ProjectDescription";
 import StyledLink from "../shared/StyledLink";
 import ProjectTech from "./ProjectTech";
 import ProjectLinks from "./ProjectLinks";
-import { FiGithub } from "react-icons/fi";
+import { FiGithub, FiExternalLink } from "react-icons/fi";
 
 const MockEcommerce = () => {
   return (
@@ -34,6 +34,10 @@ const MockEcommerce = () => {
           {
             link: "https://github.com/Kappaed/mock-dashboard",
             icon: <FiGithub />,
+          },
+          {
+            link: "https://mock-ecommerce.netlify.app/",
+            icon: <FiExternalLink />,
           },
         ]}
       />

@@ -3,7 +3,7 @@ import ProjectFour from "../../images/project-04.png";
 import ProjectDescription from "./ProjectDescription";
 import ProjectTech from "./ProjectTech";
 import ProjectLinks from "./ProjectLinks";
-import { FiGithub } from "react-icons/fi";
+import { FiGithub, FiExternalLink } from "react-icons/fi";
 
 const LandingProject = () => {
   return (
@@ -24,6 +24,10 @@ const LandingProject = () => {
           {
             link: "https://github.com/Kappaed/Landing-Page",
             icon: <FiGithub />,
+          },
+          {
+            link: "https://easybank-landing-app.netlify.app",
+            icon: <FiExternalLink />,
           },
         ]}
       />

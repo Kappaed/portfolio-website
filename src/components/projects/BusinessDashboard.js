@@ -3,7 +3,7 @@ import ProjectThree from "../../images/project-03.png";
 import ProjectDescription from "./ProjectDescription";
 import ProjectTech from "./ProjectTech";
 import ProjectLinks from "./ProjectLinks";
-import { FiGithub } from "react-icons/fi";
+import { FiGithub, FiExternalLink } from "react-icons/fi";
 
 const BusinessDashboard = () => {
   return (
@@ -24,6 +24,10 @@ const BusinessDashboard = () => {
           {
             link: "https://github.com/Kappaed/mock-dashboard",
             icon: <FiGithub />,
+          },
+          {
+            link: "https://mock-dashboard-webapp.netlify.app",
+            icon: <FiExternalLink />,
           },
         ]}
       />
