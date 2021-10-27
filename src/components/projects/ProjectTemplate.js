@@ -11,13 +11,14 @@ const Wrapper = styled.div`
   margin-bottom: 80px;
   flex-direction: ${(props) => (props.reverse ? "row-reverse" : "row")};
   position: relative;
+  overflow: hidden;
   @media (max-width: 700px) {
     flex-direction: column;
   }
 `;
 const ProjectTemplate = (props) => {
   return (
-    <Wrapper reverse={props.reverse}>
+    <Wrapper reverse={props.reverse} {...props}>
       <ProjectImage src={props.img} alt="Project Preview" />
       <ProjectInfo alignLeft={props.reverse}>
         <StyledHeading size="1.8rem">{props.title}</StyledHeading>

@@ -7,7 +7,12 @@ import { FiGithub } from "react-icons/fi";
 
 const CrmApp = () => {
   return (
-    <ProjectTemplate img={ProjectTwo} title="CRM Web App" reverse>
+    <ProjectTemplate
+      img={ProjectTwo}
+      title="CRM Web App"
+      reverse
+      data-aos="fade-left"
+    >
       <ProjectDescription reverse>
         A full-stack, responsive Private CRM web app built exclusively for a
         client who required a CRUD-like system to add personal contacts with

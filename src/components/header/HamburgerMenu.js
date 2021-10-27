@@ -13,9 +13,9 @@ const Wrapper = styled.div`
   left: 0;
   top: 0;
   font-size: 1.3rem;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.6s ease-in-out;
   transform: ${(props) =>
-    props.visible ? "translateX(0)" : "translateX(200%)"};
+    props.visible ? "translateX(0)" : "translateX(500%)"};
 `;
 
 const Backdrop = styled.div`
@@ -76,7 +76,7 @@ const HamburgerMenu = (props) => {
         <FaTimes />
       </HamburgerButton>
       <Menu>
-        <Nav mobile />
+        <Nav mobile onMenuItemClick={props.closeButtonHandler} />
       </Menu>
       <Backdrop />
     </Wrapper>,

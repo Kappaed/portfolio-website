@@ -7,7 +7,9 @@ import Action from "./components/action/Action";
 import EmailElement from "./components/side-elements/EmailElement";
 import IconsElement from "./components/side-elements/IconsElement";
 import HamburgerMenu from "./components/header/HamburgerMenu";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import "aos/dist/aos.css";
+import AOS from "aos";
 
 function App() {
   const [hamburgerActive, setHamburgerActive] = useState(false);
@@ -18,6 +20,11 @@ function App() {
   const openButtonHandler = () => {
     setHamburgerActive(true);
   };
+
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
 
   return (
     <>

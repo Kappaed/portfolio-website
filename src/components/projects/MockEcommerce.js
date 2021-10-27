@@ -8,7 +8,11 @@ import { FiGithub } from "react-icons/fi";
 
 const MockEcommerce = () => {
   return (
-    <ProjectTemplate img={ProjectOne} title="React Ecommerce Website">
+    <ProjectTemplate
+      img={ProjectOne}
+      title="React Ecommerce Website"
+      data-aos="fade-right"
+    >
       <ProjectDescription>
         An E-Commerce web app (without a payment system) that allows users to
         view, search, filter by category and add to cart various products

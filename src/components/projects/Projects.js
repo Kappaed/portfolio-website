@@ -7,6 +7,7 @@ import BusinessDashboard from "./BusinessDashboard";
 import LandingProject from "./LandingProject";
 const ProjectsContainer = styled(Container)`
   margin: 200px auto;
+  overflow: hidden;
 `;
 
 const Projects = () => {

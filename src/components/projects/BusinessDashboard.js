@@ -7,7 +7,11 @@ import { FiGithub } from "react-icons/fi";
 
 const BusinessDashboard = () => {
   return (
-    <ProjectTemplate img={ProjectThree} title="Business Dashboard">
+    <ProjectTemplate
+      img={ProjectThree}
+      title="Business Dashboard"
+      data-aos="fade-right"
+    >
       <ProjectDescription>
         A beautiful, responsive business dashboard with dummy summary data
         rendered with React Charts as well as basic descriptive statistics.

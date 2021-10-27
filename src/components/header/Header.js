@@ -39,6 +39,7 @@ const Header = (props) => {
       <Headroom
         style={{
           zIndex: "10",
+          maxWidth: "100%",
           background: isPosFixed
             ? "var(--darker-primary)"
             : "var(--primary-bg-color)",

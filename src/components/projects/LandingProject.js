@@ -7,7 +7,12 @@ import { FiGithub } from "react-icons/fi";
 
 const LandingProject = () => {
   return (
-    <ProjectTemplate img={ProjectFour} title="Landing Page" reverse>
+    <ProjectTemplate
+      img={ProjectFour}
+      title="Landing Page"
+      reverse
+      data-aos="fade-left"
+    >
       <ProjectDescription reverse>
         An aesthetically pleasing, responsive landing page built using HTMl5,
         SASS, and Vanilla Javascript.

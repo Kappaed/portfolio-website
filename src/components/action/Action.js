@@ -22,7 +22,7 @@ const StyledText = styled.p`
 `;
 const Action = () => {
   return (
-    <Wrapper id="contact">
+    <Wrapper id="contact" data-aos="fade-up">
       <SecondaryText>04. What's next?</SecondaryText>
       <StyledHeading>Get in Touch</StyledHeading>
       <StyledText>

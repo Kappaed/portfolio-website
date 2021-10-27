@@ -27,16 +27,36 @@ const MobileCSS = css`
 const Nav = (props) => {
   return (
     <Wrapper mobile={props.mobile}>
-      <NavItem href="#about" index="1" mobile={props.mobile}>
+      <NavItem
+        href="#about"
+        index="1"
+        mobile={props.mobile}
+        onItemClick={props.onMenuItemClick}
+      >
         About
       </NavItem>
-      <NavItem href="#projects" index="2" mobile={props.mobile}>
+      <NavItem
+        href="#projects"
+        index="2"
+        mobile={props.mobile}
+        onItemClick={props.onMenuItemClick}
+      >
         Projects
       </NavItem>
-      <NavItem href="#contact" index="3" mobile={props.mobile}>
+      <NavItem
+        href="#contact"
+        index="3"
+        mobile={props.mobile}
+        onItemClick={props.onMenuItemClick}
+      >
         Contact
       </NavItem>
-      <StyledButton as="a" href="#" hamburger={props.mobile}>
+      <StyledButton
+        as="a"
+        href="#"
+        hamburger={props.mobile}
+        onItemClick={props.onMenuItemClick}
+      >
         Resume
       </StyledButton>
     </Wrapper>

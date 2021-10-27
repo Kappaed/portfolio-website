@@ -11,6 +11,8 @@ const Wrapper = styled.div`
     margin: 20px 0 60px 0;
   }
 `;
+
+
 const AboutIntroText = () => {
   return (
     <Wrapper>

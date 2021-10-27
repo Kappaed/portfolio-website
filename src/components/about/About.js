@@ -30,7 +30,7 @@ const SkillsHeader = styled(StyledHeading)`
 
 const About = () => {
   return (
-    <Container id="about">
+    <Container id="about" data-aos="zoom-in">
       <FlexWrapper>
         <AboutColumn>
           <SectionHeader index="1" width="100%">

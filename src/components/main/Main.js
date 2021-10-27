@@ -3,7 +3,6 @@ import Container from "../shared/Container";
 import SecondaryText from "../shared/SecondaryText";
 import StyledHeading from "../shared/StyledHeading";
 import StyledButton from "../shared/StyledButton";
-
 const Wrapper = styled.div`
   width: 100%;
   color: var(--primary-font-color);
@@ -43,7 +42,7 @@ const MainHeading = styled(StyledHeading)`
 
 const Main = () => {
   return (
-    <Wrapper>
+    <Wrapper data-aos="fade-right">
       <Container>
         <SecondaryText>Hi, my name is</SecondaryText>
         <MainHeading as="h1" size="4rem">
