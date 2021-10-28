@@ -14,6 +14,7 @@ const Wrapper = styled(Container)`
   text-align: center;
   margin: 300px auto;
   position: relative;
+  overflow: hidden;
   @media (max-width: 500px) {
     padding: 0 50px;
   }
