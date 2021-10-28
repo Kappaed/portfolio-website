@@ -3,6 +3,7 @@ import SecondaryText from "../shared/SecondaryText";
 import StyledHeading from "../shared/StyledHeading";
 import StyledButton from "../shared/StyledButton";
 import Container from "../shared/Container";
+import Bubbles from "./Bubbles";
 const Wrapper = styled(Container)`
   width: 100%;
   display: flex;
@@ -12,6 +13,7 @@ const Wrapper = styled(Container)`
   padding: 0 130px;
   text-align: center;
   margin: 300px auto;
+  position: relative;
   @media (max-width: 500px) {
     padding: 0 50px;
   }
@@ -22,17 +24,20 @@ const StyledText = styled.p`
 `;
 const Action = () => {
   return (
-    <Wrapper id="contact" data-aos="fade-up">
-      <SecondaryText>04. What's next?</SecondaryText>
-      <StyledHeading>Get in Touch</StyledHeading>
-      <StyledText>
-        My inbox is always open. Whether you have a question or just want to say
-        hi, I’ll try my best to get back to you!
-      </StyledText>
-      <StyledButton as="a" href="mailto:nathansing.ns@gmail.com">
-        Say Hello
-      </StyledButton>
-    </Wrapper>
+    <div style={{ position: "relative" }} id="contact" data-aos="fade-up">
+      <Wrapper>
+        <SecondaryText>04. What's next?</SecondaryText>
+        <StyledHeading>Get in Touch</StyledHeading>
+        <StyledText>
+          My inbox is always open. Whether you have a question or just want to
+          say hi, I’ll try my best to get back to you!
+        </StyledText>
+        <StyledButton as="a" href="mailto:nathansing.ns@gmail.com">
+          Say Hello
+        </StyledButton>
+      </Wrapper>
+      <Bubbles />
+    </div>
   );
 };
 

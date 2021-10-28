@@ -25,7 +25,7 @@ const ChildWrapper = styled.span`
 
 const NavItem = (props) => {
   return (
-    <Wrapper mobile={props.mobile} onClick={props.onItemClick}>
+    <Wrapper mobile={props.mobile} onClick={props.NavItemClick}>
       <NavText as="a" href={props.href}>
         {`0${props.index}.`}
         <ChildWrapper>{props.children}</ChildWrapper>

@@ -31,7 +31,7 @@ const Nav = (props) => {
         href="#about"
         index="1"
         mobile={props.mobile}
-        onItemClick={props.onMenuItemClick}
+        NavItemClick={props.onMenuItemClick}
       >
         About
       </NavItem>
@@ -39,7 +39,7 @@ const Nav = (props) => {
         href="#projects"
         index="2"
         mobile={props.mobile}
-        onItemClick={props.onMenuItemClick}
+        NavItemClick={props.onMenuItemClick}
       >
         Projects
       </NavItem>
@@ -47,7 +47,7 @@ const Nav = (props) => {
         href="#contact"
         index="3"
         mobile={props.mobile}
-        onItemClick={props.onMenuItemClick}
+        NavItemClick={props.onMenuItemClick}
       >
         Contact
       </NavItem>
@@ -55,7 +55,7 @@ const Nav = (props) => {
         as="a"
         href="#"
         hamburger={props.mobile}
-        onItemClick={props.onMenuItemClick}
+        NavItemClick={props.onMenuItemClick}
       >
         Resume
       </StyledButton>
