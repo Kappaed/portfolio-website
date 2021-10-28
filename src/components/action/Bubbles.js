@@ -23,7 +23,7 @@ const generateBubbles = () => {
       <Bubble
         key={i}
         bubbleProps={{
-          bubbleLeftOffset: `${randRange(0, 90)}vw`,
+          bubbleLeftOffset: `${randRange(0, 80)}vw`,
           bubbleRadius: `${randRange(1, 10)}vw`,
           bubbleFloatDuration: `${randRange(6, 12)}s`,
           bubbleSwayDuration: `${randRange(4, 6)}s`,
