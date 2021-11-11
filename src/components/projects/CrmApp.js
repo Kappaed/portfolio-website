@@ -3,7 +3,7 @@ import ProjectTwo from "../../images/project-02.png";
 import ProjectDescription from "./ProjectDescription";
 import ProjectTech from "./ProjectTech";
 import ProjectLinks from "./ProjectLinks";
-import { FiGithub } from "react-icons/fi";
+import { FiGithub, FiExternalLink } from "react-icons/fi";
 
 const CrmApp = () => {
   return (
@@ -34,6 +34,10 @@ const CrmApp = () => {
           {
             link: "https://github.com/Hansen11111/TeamLazyEvaluators-COMP30022",
             icon: <FiGithub />,
+          },
+          {
+            link: "http://leonsterling.com:3000/",
+            icon: <FiExternalLink />,
           },
         ]}
       />
