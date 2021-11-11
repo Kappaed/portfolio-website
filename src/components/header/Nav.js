@@ -1,6 +1,7 @@
 import styled, { css } from "styled-components";
 import NavItem from "./NavItem";
 import StyledButton from "../shared/StyledButton";
+import resumeFile from "../../resume.pdf";
 
 const Wrapper = styled.li`
   display: flex;
@@ -53,7 +54,7 @@ const Nav = (props) => {
       </NavItem>
       <StyledButton
         as="a"
-        href="#"
+        href={resumeFile}
         hamburger={props.mobile}
         NavItemClick={props.onMenuItemClick}
       >
