@@ -28,7 +28,7 @@ function App() {
   }, []);
 
   useEffect(() => {
-    ReactGA.initialize("G-TL5STESQRK");
+    ReactGA.initialize("UA-213640813-1");
     ReactGA.pageview(window.location.pathname + window.location.search);
   }, []);
 
