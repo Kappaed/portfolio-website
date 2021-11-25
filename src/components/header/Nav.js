@@ -1,6 +1,6 @@
 import styled, { css } from "styled-components";
 import NavItem from "./NavItem";
-import StyledButton from "../shared/StyledButton";
+import { OutboundButton } from "../shared/StyledButton";
 import resumeFile from "../../resume.pdf";
 
 const Wrapper = styled.li`
@@ -52,14 +52,15 @@ const Nav = (props) => {
       >
         Contact
       </NavItem>
-      <StyledButton
-        as="a"
-        href={resumeFile}
+      <OutboundButton
+        // as="a"
+        to={resumeFile}
+        target="_blank"
         hamburger={props.mobile}
         NavItemClick={props.onMenuItemClick}
       >
         Resume
-      </StyledButton>
+      </OutboundButton>
     </Wrapper>
   );
 };

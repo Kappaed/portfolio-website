@@ -7,6 +7,7 @@ import Action from "./components/action/Action";
 import EmailElement from "./components/side-elements/EmailElement";
 import IconsElement from "./components/side-elements/IconsElement";
 import HamburgerMenu from "./components/header/HamburgerMenu";
+import ReactGA from "react-ga";
 import { useState, useEffect } from "react";
 import "aos/dist/aos.css";
 import AOS from "aos";
@@ -24,6 +25,11 @@ function App() {
   useEffect(() => {
     AOS.init();
     AOS.refresh();
+  }, []);
+
+  useEffect(() => {
+    ReactGA.initialize("G-TSWVZDCXB6");
+    ReactGA.pageview(window.location.pathname + window.location.search);
   }, []);
 
   return (
