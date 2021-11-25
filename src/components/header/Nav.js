@@ -54,6 +54,7 @@ const Nav = (props) => {
       </NavItem>
       <OutboundButton
         // as="a"
+        eventLabel="Checked Out Resume"
         to={resumeFile}
         target="_blank"
         hamburger={props.mobile}

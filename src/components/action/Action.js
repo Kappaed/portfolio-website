@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import SecondaryText from "../shared/SecondaryText";
 import StyledHeading from "../shared/StyledHeading";
-import StyledButton from "../shared/StyledButton";
+import { OutboundButton } from "../shared/StyledButton";
 import Container from "../shared/Container";
 import Bubbles from "./Bubbles";
 const Wrapper = styled(Container)`
@@ -33,9 +33,13 @@ const Action = () => {
           My inbox is always open. Whether you have a question or just want to
           say hi, I’ll try my best to get back to you!
         </StyledText>
-        <StyledButton as="a" href="mailto:nathansing.ns@gmail.com">
+        <OutboundButton
+          eventLabel="Tried to send email"
+          to="mailto:nathansing.ns@gmail.com"
+          target="_blank"
+        >
           Say Hello
-        </StyledButton>
+        </OutboundButton>
       </Wrapper>
       <Bubbles />
     </div>
