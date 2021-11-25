@@ -58,7 +58,7 @@ const Nav = (props) => {
         to={resumeFile}
         target="_blank"
         hamburger={props.mobile}
-        NavItemClick={props.onMenuItemClick}
+        onClick={props.onMenuItemClick}
       >
         Resume
       </OutboundButton>

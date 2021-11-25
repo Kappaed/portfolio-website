@@ -1,5 +1,6 @@
 import StyledLink from "../shared/StyledLink";
 import styled from "styled-components";
+import { OutboundLink } from "react-ga";
 
 const AboutText = styled.p`
   line-height: 1.5;
@@ -11,7 +12,6 @@ const Wrapper = styled.div`
     margin: 20px 0 60px 0;
   }
 `;
-
 
 const AboutIntroText = () => {
   return (
@@ -27,7 +27,11 @@ const AboutIntroText = () => {
       </AboutText>
       <AboutText>
         You can check out my
-        <StyledLink href="https://github.com/kappaed">
+        <StyledLink
+          as={OutboundLink}
+          eventLabel="Visited Github"
+          to="https://github.com/kappaed"
+        >
           {" "}
           Github here.
         </StyledLink>{" "}
