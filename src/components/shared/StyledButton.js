@@ -14,8 +14,8 @@ const ButtonStyling = css`
   &:hover {
     background: var(--bg-tint);
   }
-  ${(props) => props.hamburger && "font-size: 2rem"};
-  ${(props) => props.hamburger && "margin-top: 30px"};
+  ${(props) => props.$hamburger && "font-size: 2rem"};
+  ${(props) => props.$hamburger && "margin-top: 30px"};
 `;
 
 const StyledButton = styled.button`

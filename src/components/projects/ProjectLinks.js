@@ -6,8 +6,8 @@ const Wrapper = styled.div`
 
 const IconWrapper = styled(OutboundLink)`
   display: inline-block;
-  margin-left: ${(props) => (props.reverse ? "0" : "5px")};
-  margin-right: ${(props) => (props.reverse ? "5px" : "0")};
+  margin-left: ${(props) => (props.$reverse ? "0" : "5px")};
+  margin-right: ${(props) => (props.$reverse ? "5px" : "0")};
   color: var(--tertiary-font-color);
   &:hover {
     color: var(--secondary-font-color);
@@ -23,7 +23,7 @@ const ProjectLinks = (props) => {
           to={item.link}
           target="_blank"
           key={index}
-          reverse={props.reverse}
+          $reverse={props.reverse}
         >
           {item.icon}
         </IconWrapper>

@@ -52,7 +52,7 @@ const Main = () => {
           Front-end is my passion.
         </MainHeading>
         <StyledText>
-          I'm a Front End Developer specialised in React who's interested in the
+          I'm a Software Engineer specialised in React who's interested in the
           latest web technologies.{" "}
           <SecondaryText as="span">
             You can check out my projects below!

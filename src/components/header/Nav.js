@@ -57,7 +57,7 @@ const Nav = (props) => {
         eventLabel="Checked Out Resume"
         to={resumeFile}
         target="_blank"
-        hamburger={props.mobile}
+        $hamburger={props.mobile}
         onClick={props.onMenuItemClick}
       >
         Resume
