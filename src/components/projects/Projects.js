@@ -2,9 +2,8 @@ import SectionHeader from "../shared/SectionHeader";
 import Container from "../shared/Container";
 import styled from "styled-components";
 import MockEcommerce from "./MockEcommerce";
-import CrmApp from "./CrmApp";
-import BusinessDashboard from "./BusinessDashboard";
-import LandingProject from "./LandingProject";
+import Dashboard from "./Dashboard";
+import MazeGame from "./MazeGame";
 const ProjectsContainer = styled(Container)`
   margin: 200px auto;
   overflow: hidden;
@@ -17,9 +16,8 @@ const Projects = () => {
         Some things I've built
       </SectionHeader>
       <MockEcommerce />
-      <CrmApp />
-      <BusinessDashboard />
-      <LandingProject />
+      <MazeGame />
+      <Dashboard />
     </ProjectsContainer>
   );
 };

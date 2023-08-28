@@ -10,33 +10,37 @@ const MockEcommerce = () => {
   return (
     <ProjectTemplate
       img={ProjectOne}
-      title="React Ecommerce Website"
+      title="Full-Stack Ecommerce Website"
       data-aos="fade-right"
     >
       <ProjectDescription>
-        An E-Commerce web app (without a payment system) that allows users to
-        view, search, filter by category and add to cart various products
-        fetched from a{" "}
-        <StyledLink href="https://fakestoreapi.com/"> Mock API</StyledLink>.
+        A full-stack E-Commerce web-app with a front-end interface implemented
+        in ReactJS, NodeJS+Express backend server and Firebase Database. User
+        authentication (JWT with Firebase Auth) and payment system (Stripe API)
+        have also been implemented.
+        {/* <StyledLink href="https://fakestoreapi.com/"> Mock API</StyledLink>. */}
       </ProjectDescription>
       <ProjectTech
         tech={[
           "ReactJS",
-          "Axios",
-          "React-Router",
-          "Redux",
-          "Redux-Persist",
-          "Styled-Components",
+          "NodeJS+Express",
+          "Firebase",
+          "Stripe API",
+          "JSON Web Token",
         ]}
       />
       <ProjectLinks
         links={[
           {
-            link: "https://github.com/Kappaed/mock-dashboard",
+            link: "https://github.com/Kappaed/Stripe-Store-Frontend",
             icon: <FiGithub />,
           },
           {
-            link: "https://mock-ecommerce.netlify.app/",
+            link: "https://github.com/Kappaed/Stripe-Store-Backend",
+            icon: <FiGithub />,
+          },
+          {
+            link: "https://superlative-crostata-89b75d.netlify.app/",
             icon: <FiExternalLink />,
           },
         ]}

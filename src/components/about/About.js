@@ -42,13 +42,19 @@ const About = () => {
           <SkillsHeader>Skills</SkillsHeader>
           <AboutSkills
             skills={[
-              "HTML",
-              "CSS/SASS",
               "Javascript (ES6)",
+              "Typescript",
               "ReactJS",
-              "Redux",
-              "Styled-Components",
-              "Git",
+              "Python 3+",
+              "Golang",
+              "Java",
+              // "HTML",
+              // "CSS/SASS",
+              // "Javascript (ES6)",
+              // "ReactJS",
+              // "Redux",
+              // "Styled-Components",
+              // "Git",
             ]}
           />
         </AboutColumn>
