@@ -1,7 +1,6 @@
 import ProjectTemplate from "./ProjectTemplate";
 import ProjectOne from "../../images/project-01.png";
 import ProjectDescription from "./ProjectDescription";
-import StyledLink from "../shared/StyledLink";
 import ProjectTech from "./ProjectTech";
 import ProjectLinks from "./ProjectLinks";
 import { FiGithub, FiExternalLink } from "react-icons/fi";

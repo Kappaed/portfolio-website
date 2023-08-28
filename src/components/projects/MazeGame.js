@@ -1,7 +1,6 @@
 import ProjectTemplate from "./ProjectTemplate";
 import MazeImg from "../../images/Maze.png";
 import ProjectDescription from "./ProjectDescription";
-import ProjectTech from "./ProjectTech";
 import ProjectLinks from "./ProjectLinks";
 import { FiGithub, FiExternalLink } from "react-icons/fi";
 
